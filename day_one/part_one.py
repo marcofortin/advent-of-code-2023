@@ -12,7 +12,7 @@ def get_calibration_value(line: str) -> int:
 
 
 def sum_calibration_values() -> int:
-    with open("calibration_document.txt") as f:
+    with open("input.txt") as f:
         res = 0
         for line in f:
             res += get_calibration_value(line)
